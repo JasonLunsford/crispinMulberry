@@ -41,24 +41,20 @@ CONTENTS - MYNORMALIZE.CSS
 	/* Helvetica only available on Macs by default, Arial a very close approximation (and available on Windows) */
 	/* sans-serif will be the ultimate fall back */
 	html { font-family:Helvetica, Arial, sans-serif; }
-
-	/* Address style set to "bolder" in Firefox 4+, Safari 5, and Chrome. */
-	b,
-	strong { font-weight:bold; }
 	
 
 /* 3. LINKS & BUTTONS
 ----------------------------------------------------------------------------------------*/
 
 	/* Remove the gray background color from active links in IE 10. */
-	a { background:transparent; }
+	a { background:transparent; text-decoration:none; }
 
 	/* Address "outline" inconsistency between Chrome and other browsers. */
 	a:focus { outline:0; }
 
 	/* Improve readability when focused and also mouse hovered in all browsers. */
-	a:active,
-	a:hover { outline:0; }
+	a:active, a:hover { outline:0; }
+	
 
 
 /* 4. GLOBAL LAYOUT
@@ -92,8 +88,7 @@ CONTENTS - MYNORMALIZE.CSS
 	}
 
 	/* Address Firefox 4+ setting "line-height" on <input> using "!important" in the User Agent stylesheet. */
-	button,
-	input { line-height:normal; }
+	button, input { line-height:normal; }
 
 	/* Addresses inconsistent "text-transform" style inheritance for <button> in Chrome, Safari 5+, and IE 8+. */
 	button { text-transform:none; }

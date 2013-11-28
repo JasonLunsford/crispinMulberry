@@ -17,7 +17,7 @@
 		<div class="siteHeader" role="banner">
 			<a href="" class="siteLogo"><img src="img/header/Crispin_and_Mulberry_Logo.png" alt="Crispin and Mulberry Logo" /></a>
 			<div class="siteUtilities">
-				<form class="siteSearch" id="search" action="/search.html">
+				<form class="siteSearch" id="search" action="">
 				 <!-- input and button go here, use #searchButton for the ID -->
 				</form>
 			</div>
@@ -83,6 +83,28 @@
 							<h1>Browse Categories</h1>
 						</div>
 					</header>
+					<h2>Popular Destinations</h2>
+					<ul>
+						<li><a href="">United States</a></li>
+						<li><a href="">Europe</a></li>
+						<li><a href="">Latin America</a></li>
+						<li><a href="">South Pacific</a></li>
+						<li><a href="">Caribbean</a></li>
+						<li><a href="">Australia</a></li>
+						<li><a href="">All Destinations</a></li>
+					</ul>
+					<h2 class="bottomHeader">Getaways</h2>
+					<ul>
+						<li><a href="">Adventure Vacations</a></li>
+						<li><a href="">Beach Vacations</a></li>
+						<li><a href="">Cruise Vacations</a></li>
+						<li><a href="">Culinary Vacations</a></li>
+						<li><a href="">Family Vacations</a></li>
+						<li><a href="">Luxury Vacations</a></li>
+						<li><a href="">Romantic Vacations</a></li>
+						<li><a href="">Ski Vacations</a></li>
+						<li><a href="">All Vacations</a></li>
+					</ul>
 				</aside>
 				<article class="recentArticles">
 					<header class="thickBlueBar">
@@ -90,21 +112,75 @@
 							<h1>Recent Articles</h1>
 						</div>
 					</header>
+					<div class="articleRow">
+						<img src="img/articles/DisneyWorld.png" alt="Disney World" />
+						<h2>Don't Miss the Parades at DisneyWorld</h2>
+						<p>
+							The parades at Disney World are a one of a kind celebration full of all your favorite Disney characters and music. The entertainment never stops as parades are scheduled throughout the entire day.
+						</p>
+					</div>
+					<div class="articleRow">
+						<img src="img/articles/Las-Vegas.png" alt="Las Vegas" />
+						<h2>Get You Kicks in Downtown Las Vegas</h2>
+						<p>
+							Get off the strip and check out what Old Vegas has to offer. From shark infested water slides to the nightly Fremont Street Experiences it's sure to please adventurers of all ages.
+						</p>
+					</div>
+					<div class="articleRow">
+						<img src="img/articles/Chicago.png" alt="Chicago" />
+						<h2>Don't Miss Deep Dish in Chicago</h2>
+						<p>
+							Deep dish pizza is as synonymous with Chicago as Thin Crust is to New York. Any way you slice it, any trip to the windy city is incomplete without an italian flavor explosion in your mouth.
+						</p>
+					</div>
 				</article>
 				<aside class="leadCollectors">
 					<div class="newsLetterContainer">
 						<header class="thickGreyBar">
 							<h1>Sign Up For Our Newsletter</h1>
 						</header>
-					
+						<form id="newsletter" action="">
+							<div>
+								<input type="text" name= "newsletterEmail" placeholder="user@domain.com" maxlength=25 />
+							</div>
+						 	<div class="checkBoxContainer">
+						 		<p>Select the newsletters you'd like to receive</p>
+						 		<div>
+						 			<input type="checkbox" value="destinationsAndGetaways" id="checkBoxOne" checked="checked" />
+						 			<label for="checkBoxOne">Destinations & Getaways</label>
+						 		</div>
+						 		<div>
+						 			<input type="checkbox" value="weeklyTravelTips" id="checkBoxTwo" checked="checked" />
+						 			<label for="checkBoxTwo">Weekly Travel Tips</label>
+						 		</div>
+						 	</div>
+						 	<div>
+						 		<button type="submit" id="newsletterButton" name="signUpButton">Sign Up</button>
+						 	</div>
+						</form>
 						<footer>
-					
+							<ul>
+								<li><a href="">Privacy Policy</a></li>
+								<li><a href="">Terms of Use</a></li>
+							</ul>
 						</footer>
 					</div>
 					<div class="contestsContainer">
 						<header class="thickGreyBar">
 							<h1>Current Contests</h1>
 						</header>
+						<div class="contestsRow">
+							<img src="img/contests/yetishrine.png" alt="Yeti Shrine" />
+							<p>
+								Win an all inclusive trip to visit the famous Yeti Shrine deep in the heart of Asia
+							</p>
+						</div>
+						<div class="contestsRow">
+							<img src="img/contests/stonehenge.png" alt="Stonehenge" />
+							<p>
+								Win a mystical trip to Bath that includes a guided tour of Stonehenge
+							</p>
+						</div>
 					</div>
 				</aside>
 			</div>
@@ -115,23 +191,33 @@
 							<h1>Popular Videos</h1>
 						</div>
 					</header>
-					<div class="videoBoxA">
-						<p></p>
+					<div class="videoRow">
+						<div class="videoBoxA">
+							<img src="img/videos/Video_1.png" alt="Team Mongoose" />
+							<p>Team Mongoose</p>
+						</div>
+						<div class="videoBoxB">
+							<img src="img/videos/Video_2.png" alt="St Pauls Cathedral" />
+							<p>St Paul's Cathedral</p>
+						</div>
+						<div class="videoBoxC">
+							<img src="img/videos/Video_3.png" alt="Hollywood and Highland" />
+							<p>Hollywood and Highland</p>
+						</div>
 					</div>
-					<div class="videoBoxB">
-						<p></p>
-					</div>
-					<div class="videoBoxC">
-						<p></p>
-					</div>
-					<div class="videoBoxD">
-						<p></p>
-					</div>
-					<div class="videoBoxE">
-						<p></p>
-					</div>
-					<div class="videoBoxF">
-						<p></p>
+					<div class="videoRow">
+						<div class="videoBoxD">
+							<img src="img/videos/Video_4.png" alt="Lake Wissota" />
+							<p>Lake Wissota</p>
+						</div>
+						<div class="videoBoxE">
+							<img src="img/videos/Video_5.png" alt="Bellagio Fountains" />
+							<p>The Bellagio Fountains</p>
+						</div>
+						<div class="videoBoxF">
+							<img src="img/videos/Video_6.png" alt="Atlantic Coast" />
+							<p>The Atlantic Coast</p>
+						</div>
 					</div>
 				</section>
 				<aside class="twitterBox" id="twitterZone">
@@ -154,13 +240,25 @@
 		</section>
 		<div class="siteFooter" role="contentinfo">
 			<div class="footerMenu">
-			
+				<ul>
+					<li><a href="">Privacy Policy</a></li>
+					<li><a href="">Terms of Use</a></li>
+					<li><a href="">Site Map</a></li>
+					<li><a href="">Contact Us</a></li>
+				</ul>
 			</div>
 			<div class="footerLegal">
-			
+				<ul>
+					<li><span>&copy; 2013 Crispin & Mulberry</span></li>
+					<li><span>1640 Riverside Drive, Hill Valley, California, 95420</span></li>
+				</ul>
 			</div>
-			<div class="socialIcons">
-			
+			<div class="socialIcons" id="socialIconArea">
+				<a href="http://www.facebook.com" target="_blank" class="facebook" />
+				<a href="http://www.flickr.com" target="_blank" class="flickr" />
+				<a href="http://www.twitter.com" target="_blank" class="twitter" />
+				<a href="https://vimeo.com/" target="_blank" class="vimeo" />
+				<a href="" class="rssFeed" />
 			</div>
 		</div>
 	</div>

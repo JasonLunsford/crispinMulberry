@@ -72,6 +72,13 @@ CONTENTS - MAIN.CSS
 		padding:0px;
 		text-transform:uppercase;
 	}
+	
+	h2 {
+		color:#282b2e; 
+		font-size:14px; 
+		margin:0px 0px 10px 0px;
+		padding:0px;
+	}
 
 /* 3. LINKS & BUTTONS
 ----------------------------------------------------------------------------------------*/
@@ -155,7 +162,7 @@ CONTENTS - MAIN.CSS
 	}
 	nav ul li.lastChild a { padding:0px; }
 	nav ul li.selected a { color:#000000; padding:4px 0px 0px; }
-	
+		
 	/* Text colors do NOT change in this live demo, only selected item background and text positioning */
 	nav ul li a.destinations { background:url("../img/navbar/DESTINATIONS.png") no-repeat center 15px transparent; color:transparent; }
 	nav ul li.selected a.destinations { background-position:center 19px; }
@@ -304,8 +311,9 @@ CONTENTS - MAIN.CSS
 	/* START COPY HEAVY CONTAINER STYLING
 	--------------------------------------*/
 	
-	/* Shared Header Bar Styling */
-	/* Blue Bars */
+	/* Shared Styling */
+	
+	/* Blue Title Bars */
 	div.wrapper section.mainContent header.thickBlueBar {
 		height:34px;
 		margin:0px 0px 20px 0px;
@@ -330,7 +338,7 @@ CONTENTS - MAIN.CSS
 		padding:0px 0px 0px 27px;
 	}
 	
-	/* Lead Capture Bars */
+	/* Lead Capture Title Bars */
 	div.wrapper section.mainContent aside.leadCollectors h1 {
 		background-image:url("../img/Icon-Sprite.png");
 		background-repeat:no-repeat;
@@ -342,7 +350,15 @@ CONTENTS - MAIN.CSS
 		padding:0px 0px 0px 21px;
 		text-transform:uppercase;
 	}
-	/* Shared Header Bar Styling */
+	
+	/* Anchors */
+	div.wrapper section.mainContent div.copyHeavyContainer a {
+		color:#282b2e;
+		font-size:14px;
+	}
+	div.wrapper section.mainContent div.copyHeavyContainer a:hover { color:#0084d9; }
+	
+	/* End Shared Styling */
 	
 	/* Section Containers */
 	section.mainContent div.copyHeavyContainer { height:429px; margin:0px; padding:0px 20px; }
@@ -351,7 +367,7 @@ CONTENTS - MAIN.CSS
 	div.copyHeavyContainer article.recentArticles,
 	div.copyHeavyContainer aside.leadCollectors { float:left; }
 	
-	div.copyHeavyContainer aside.browseCategories { width:196px; }
+	div.copyHeavyContainer aside.browseCategories { margin:0px 20px 0px 0px; width:176px; }
 		
 	div.copyHeavyContainer article.recentArticles { margin:0px 20px 0px 0px; width:470px; }
 	
@@ -369,7 +385,6 @@ CONTENTS - MAIN.CSS
 		height:171px;
 		padding:0px 10px
 	}
-	
 	/* End Section Containers */
 	
 	/* Blue Content Bars - Individual Styling */
@@ -383,11 +398,44 @@ CONTENTS - MAIN.CSS
 		background-position:-116px -173px;
 		margin:0px 0px 0px 7px;
 	}
+	/* End Blue Content Bar Styling */
+	
+	aside.browseCategories h2 {
+		background-image:url("../img/Icon-Sprite.png");
+		background-repeat:no-repeat;
+		background-position:128px -159px;
+		margin:0px 0px 10px 0px;
+	}
+	
+	aside.browseCategories h2.bottomHeader { background-position:51px -159px; margin:20px 20px 10px 0px; }
+	
+	aside.browseCategories ul {
+		list-style:none;
+		margin:0px;
+		padding:0px;
+	}
+	
+	article.recentArticles div.articleRow { height:130px; margin:0px 0px 20px 0px; }
+	article.recentArticles div.articleRow img {
+		float:left; 
+		height:100%; 
+		margin:0px 16px 0px 0px; 
+		width:151px;
+	}
+	
+	article.recentArticles div.articleRow h2 { margin-top:2px; }
+	article.recentArticles div.articleRow p {
+		font-size:14.5px; 
+		height:100px; 
+		line-height:20px;
+	}
+	
 	
 	/* Lead Collector Bars - Individual Styling */
 	aside.leadCollectors div.newsLetterContainer h1 { background-position:-123px -234px; }
 
 	aside.leadCollectors div.contestsContainer h1 { background-position:-123px -63px; }
+	/* End Lead Collector Bar Styling */
 	
 	/* END COPY HEAVY CONTAINER STYLING */
 	
