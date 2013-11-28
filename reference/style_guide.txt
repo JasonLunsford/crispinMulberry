@@ -1,0 +1,330 @@
+Style Guide
+
+Proportions:
+	Body:
+		Width: 1000px
+		Padding Left: 0px
+		Padding Right: 20px
+		Padding Top: 20px
+		Padding Bottom: 20px;
+		
+	Header:
+		Height: 130px
+		
+	Masthead Logo:
+		Width: 270px
+		Height: 85px
+	Masthead Box:
+		Height: 85px
+		Width: 999px
+		Margin Top: 17px
+		Margin Left: 1px (0px?)
+	Masthead Search Field:
+		Width: 260px
+		Height: 26px
+		Margin Top: 32px
+		Margin Bottom: 17px
+	Masthead Menu:
+		Width: 260px;
+	Masthead Menu Item:
+		Padding Left:11px
+		Padding Right: 11px
+		Margin Bottom: 43px
+		
+	Navigation Section
+		Width: 1000px
+		Height: 40px
+	Navigation Menu Items
+		Padding Left: 38px
+		Padding Right: 38px
+	Navigation Menu Items (Selected)
+		Height: 43px;
+		
+	Upper Section (Carousel & Ads):
+		Height: 420px
+		Width: 960px
+		Margin Left: 20px
+		Margin Right: 20px
+		Padding Bottom: 20px
+		Margin Bottom: 20px
+		
+	Carousel Section:
+		Height: 420px
+		Width: 666px
+		Margin Right: 20px
+	Carousel Big Image:
+		Height: 331px
+		Width: 666px
+		Margin Bottom: 10px
+	Carousel Big Image Text:
+		Margin Left: 15px
+	Carousel Big Image Title:
+		Margin Top: 16px
+		Margin Bottom: 6px
+	Carousel Bit Image Sub Title:
+		Margin Bottom: 16px
+	Carousel Small Image
+		Height: 79px
+		Width: 159px
+		Margin Left: 10px
+		Margin Right: 10px
+		
+	Ads Section:
+		Height: 420px
+	Top Ad:
+		Height: 200px
+		Width: 274px;
+		Margin Bottom: 20px
+	Bottom Ad:
+		Height: 200px
+		Width: 274px;
+		
+	Newsletter Section
+		Width: 274px
+		Height: 227px
+		Margin Bottom: 20px
+	Newsletter Top Copy:
+		Padding Left: 22px
+		Padding Bottom: 10px
+		Width: 254px
+		Margin Left: 10px
+		Margin Right: 10px
+		Margin Top: 10px
+		Margin Bottom: 11px
+	Newsletter Form Box:
+		Height: 149px
+		Margin Left: 10px
+		Margin Right: 10px
+		Margin Bottom: 10px
+	Newsletter Form Input:
+		Height: 26px
+		Width: 254px
+		Margin Bottom: 11px
+	Newsletter Form Checkbox Box:
+		Width: 254px
+		Height: 78px
+		Margin Bottom: 9px
+	Newsletter Form Checkbox Box Title:
+		Margin Top: 10px
+		Margin Left: 10px
+		Margin Bottom: 11px (13px?)
+	Newsletter Form Checkbox Box Checkboxes:
+		Margin Left: 10px
+		Margin Bottom: 8px
+		Height: 14px
+		Padding Left 1: 24px (left edge of check to copy)
+		Padding Left 2: 12px (right edge of check to copy)
+	Newsletter Form Checkbox Box Checkbox 1:
+		Margin Bottom: 10px
+	Newsletter Form Checkbox Box Checkbox 1:
+		Margin Bottom: 11px
+	Newsletter Form Button Box:
+		Margin Bottom: 10px
+		Margin Left: 10px
+		Margin Right: 10px
+		Height: 25px
+	Newsletter Form Button:
+		Height: 25px
+		Width: 71px
+		Padding Top: 8px
+		Padding Bottom: 7px
+		Padding Right: 11px
+		Padding Left: 10px
+	Newsletter Bottom Row:
+		Width: 274px
+		Height: 25px (including 1px border)
+	Newsletter Bottom Row Menu:
+		Padding Left: 10px
+		Padding Right: 10px
+		
+	Current Contests Section:
+		Width: 274px
+		Height: 171px
+		Margin Bottom: 20px
+	Current Contests Top Copy:
+		Padding Left: 20px
+		Padding Bottom: 10px
+		Width: 254px
+		Margin Left: 10px
+		Margin Right: 10px
+		Margin Top: 10px
+		Margin Bottom: 10px (11px?)
+	Current Contests Image Row:
+		Height:55px
+		Width: 254px
+		Margin Left: 10px
+		Margin Right: 10px
+		Margin Bottom: 9px
+	Current Contests Image
+		Height: 55px
+		Width: 73px
+		Margin Right: 15px
+		
+	Recent Articles Section:
+		Width: 470px
+		Margin Right: 20px
+	Recent Articles Top Blue Bar:
+		Width: 470px
+		Margin Bottom: 20px
+	Recent Articles Box
+		Height: 105px
+		Margin Bottom: 20px
+	Recent Articles Image
+		Height: 105px
+		Width: 140px
+		Margin Right 15px
+		
+	Categories Main Topic Copy:
+		Margin Bottom: 10px
+	Categories Section:
+		Width: 196px
+		Margin Right: 20px
+	Categories Top Blue Bar:
+		Width: 209px
+		Margin Left: -13px
+		Margin Bottom: 20px
+	Categories Blue Bar Copy:
+		Padding Left: 27px
+		Margin Left: 10px
+	Categories List Box:
+		Margin Bottom: 23px
+	Categories Main Topic Copy:
+		Padding Right: 17px
+		Margin Bottom: 10px
+	
+	Video Section:
+		Width: 686px
+		Padding Bottom: 4px
+	Video Top Blue Bar:
+		Width: 699px
+		Margin Left: -13px
+		Margin Bottom: 20px
+	Video Top Blue Bar Copy:
+		Padding Left: 27px
+		Margin Left: 10px
+	Video Containers:
+		Margin Left: 20px
+		Margin Bottom: 20px
+		Width: 208px
+		Height: 156px
+	Video Container Copy:
+		Margin Left: 15px
+		Margin Top: 10px
+		Margin Bottom: 11px
+		
+	Tweeter Section:
+		Width: 274px
+		Height: 381px
+
+	Footer: 
+		Height: 66px
+	Footer Menu:
+		Margin Left:20px
+		Margin Top: 16px
+		Margin Bottom: 7px
+	Footer Menu Items:
+		Margin Left: 11px
+		Margin Right: 11px
+	Footer Legal Menu:
+		Margin Left:20px
+	Footer Legal Copy:
+		Margin Left: 11px
+		Margin Right: 11px
+	Footer Social Icon Box:
+		Margin Right: 20px
+		Margin Top: 20px
+	Footer Social Icon:
+		Margin Left: 8px
+
+*********************************
+COLORS & FONTS & EVERYTHING ELSE
+*********************************
+
+	Masthead Menu Item:
+		Color:#ffffff
+
+	Navigation Section
+		Gradient: Opacity 19%, Angle 90deg, Style: Linear, Dark (left) - Light (right)
+		Background Color: #f9f9f9
+	Navigation Menu Items
+		Font Size: 12px
+		Drop Shadow: Opacity 100%, Distance 1px, Angle 90deg, Spread 0%, Size 0px, Light (upper left) - Dark (lower right)
+	Navigation Menu Items (Hover)
+		Background Color: #bdc0c2
+		Gradient: Opacity 19%, Angle 90deg, Style: Linear, Dark (left) - Light (right)
+	Navigation Menu Items (Selected)
+		Background Color: #ffffff
+		Color: #282b2e
+
+	Upper Section (Carousel & Ads):
+		Border Bottom: 1px #cccdcd
+		
+	Carousel Big Image Title:
+		Font Size: 24px
+		Font Transform: Uppercase
+		Font Weight: Bold
+	Carousel Big Image Sub Title:
+		Font Size: 14px
+	Carousel Small Image Active
+		Background Position: 78px (73px?) (left) -9px (right)
+		Border: 3px #0084d9
+
+	Newsletter Section:
+		Background Color: #dbdbdb
+	Newsletter Top Copy:
+		Border Bottom: 1px #969696
+		Font Weight: Bold
+		Font Transform: Uppercase
+		Color: #282b2e
+	Newsletter Form Checkbox Box:
+		Background Color: #cac9c9
+	Newsletter Form Checkbox Box Title:
+		Font Style: Italics
+		Font Size: 12px
+	Newsletter Form Button:
+		Background Color: #0084d9
+		Color: #ffffff
+	Newsletter Bottom Row:
+		Border Top: 1px #969696
+		Background Color: #cac9c9
+
+	Current Contests Section:
+		Background Color: #dbdbdb
+	Current Contests Top Copy:
+		Border Bottom: 1px #969696
+		
+	Recent Articles Main Topic Copy:
+		Font Size: 14px
+		Font Weight: Bold
+		Color: #282b2e
+	
+	Categories Main Topic Copy:
+		Font Size: 14px
+		Font Weight: Bold
+		Color: #282b2e
+
+	Video Top Blue Bar Copy:
+		Font Weight: Bold
+		Font Size: 12px
+		Font Transform: Uppercase
+		Color: #000000
+	Video Container Copy:
+		Font Size: 13px
+		Color: #282b2e
+
+	Title Bar Ribbon (SHARED styles)
+		Background Color: #0084d9
+
+	Footer Menu:
+		Font Size:12px
+		Color: #000000
+	Footer Legal Copy:
+		Font Size:12px
+		Color: #969696
+		
+		
+		
+	search icon: -29px -157px
+	black down arrow: -181px -101px
+	black envelop: -29px -226px
+	black trophy: -301px -96px
