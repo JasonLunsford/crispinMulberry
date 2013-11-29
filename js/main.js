@@ -9,7 +9,7 @@
 		// Activate custom plug-in
 		// Default rotation speed: 4000
 		// Usage: natCarousel({ speed:[your_rotation_value_in_milliseconds_integer_only] })
-		//$("#carouselRoot").natCarousel();
+		$("#carouselRoot").natCarousel();
 				
 		// Simple mock-server demonstration highlighting how the menu system could work, and the portability of this
 		// particular CSS solution.
