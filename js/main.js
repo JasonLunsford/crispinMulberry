@@ -1,4 +1,13 @@
+//--------------------------------
+// NAT Challenge Core JS
+// Jason Lunsford
+// v1.0
+// main.js
+//--------------------------------
+
+// Protect namespace, makes it even easier to write functions that leave global alone
 (function() {
+	// enforce good practices and catch me when I get lazy
 	"use strict";
 	$(function() {
 	
