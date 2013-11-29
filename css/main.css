@@ -83,7 +83,12 @@ CONTENTS - MAIN.CSS
 /* 3. LINKS & BUTTONS & FORMS
 ----------------------------------------------------------------------------------------*/
 
-	a { text-decoration:none; }
+	a {
+		color:#282b2e;
+		font-size:14px;
+		text-decoration:none;
+	}
+	a:hover { color:#0084d9; }
 	
 	input[type="text"] { font-size:12px; }
 
@@ -159,7 +164,6 @@ CONTENTS - MAIN.CSS
 		font-weight:bold;
 		padding:0px;
 		text-align:center;
-		text-decoration:none;
 		text-transform:uppercase;
 		width:100%;
 	}
@@ -350,11 +354,7 @@ CONTENTS - MAIN.CSS
 		padding:0px 0px 0px 21px;
 		text-transform:uppercase;
 	}
-	
-	/* Anchors */
-	div.wrapper section.mainContent div.copyHeavyContainer a { color:#282b2e; font-size:14px; }
-	div.wrapper section.mainContent div.copyHeavyContainer a:hover { color:#0084d9; }
-	
+		
 	/* Anchors, Buttons, Labels and Paragraphs */
 	div.wrapper section.mainContent aside.leadCollectors button,
 	div.wrapper section.mainContent aside.leadCollectors a,
@@ -577,8 +577,71 @@ CONTENTS - MAIN.CSS
 
 	div.siteFooter {
 		background-color:#2c2c2c;
-		height:66px;
+		height:46px;
+		padding:20px 20px 0px
 	}
+	
+	div.siteFooter div.footerContent {
+		float:left;
+		width:auto;
+	}
+	
+	div.siteFooter div.socialIcons {
+		float:right;
+		height:26px;
+		width:170px;
+	}
+	
+	div.siteFooter div.footerContent div { height:19px; }
+	
+	div.siteFooter div ul {
+		list-style:none;
+		margin:0px;
+		padding:0px;
+	}
+	
+	div.siteFooter ul li {
+		border-left:1px solid #FFFFFF;
+		float:left;
+		line-height:14px;
+		padding:0px 12px;
+	}
+	
+	div.siteFooter ul.legalCopy li {
+		border-left:1px solid #969696;
+	}
+	
+	div.siteFooter ul li:first-child { border:0; padding:0px 12px 0px 0px; }
+	div.siteFooter ul li.noRightBorder { border-right:0; padding:0px 0px 0px 12px; }
+	
+	div.siteFooter ul li a {
+		color:#ffffff;
+		float:left;
+		font-size:12px;
+	}
+	div.siteFooter ul li a:hover { color:#0084d9; }
+	
+	div.siteFooter ul li span { color:#969696; font-size:12px; }
+	
+	/* Social Network Anchor Icons */
+	div.siteFooter div.socialIcons a {
+		background-image:url("../img/Icon-Sprite.png");
+		background-repeat:no-repeat;
+		float:left;
+		height:26px;
+		margin:0px 0px 0px 8px;
+		width:26px;
+	}
+	div.siteFooter div.socialIcons a:first-child { margin:0px; }
+	
+	div.socialIcons a.facebook { background-position:-15px -14px; }
+	div.socialIcons a.flickr { background-position:-61px -14px; }
+	div.socialIcons a.twitter { background-position:-15px -55px; }
+	div.socialIcons a.vimeo { background-position:-61px -57px; }
+	div.socialIcons a.rssFeed { background-position:-15px -95px; }
+
+	
+	/* End Social Network Anchor Icons */
 
 /* 8. BROWSER AND NON-SEMANTIC STYLING
 ----------------------------------------------------------------------------------------*/
