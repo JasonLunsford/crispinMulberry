@@ -518,17 +518,18 @@ CONTENTS - MAIN.CSS
 	--------------------------------------------*/
 	
 	/* Section Containers */
-	section.mainContent div.videoAndSocial { height:411px; margin:0px; padding:0px 20px; }
+	section.mainContent div.videoAndSocial {
+		height:411px; 
+		margin:0px; 
+		padding:0px 20px;
+	}
 	
 	div.videoAndSocial section.videoContainer,
 	div.videoAndSocial aside.twitterBox { float:left; }
 	
 	div.videoAndSocial section.videoContainer { margin:0px 20px 0px 0px; width:666px; }
 	
-	div.videoAndSocial aside.twitterBox {
-		padding:10px 0px 0px 0px;
-		width:274px;
-	}
+	div.videoAndSocial aside.twitterBox { padding:10px 0px 0px 0px; width:274px; }
 	/* End Section Containers */
 
 	/* Blue Content Bars - Individual Styling */
@@ -538,8 +539,33 @@ CONTENTS - MAIN.CSS
 		margin:0px 0px 0px 10px;
 		padding:0px 0px 0px 27px;
 	}
+	/* End Blue Content Bar Styling */
 	
-	/* Twitter Content styling */
+	section.videoContainer div.videoRow {
+		height:156px;
+		margin:0px 0px 20px 0px;
+		width:666px;
+	}
+	
+	section.videoContainer div.videoRow div {
+		float:left;
+		margin:0px 0px 0px 20px;
+		position:relative;
+	}
+	
+	section.videoContainer div.videoRow div:first-child { margin:0px; }
+	
+	section.videoContainer div.videoRow div img { height:156px; width:208px; }
+	
+	section.videoContainer div.videoRow div p {
+		bottom:12px;
+		font-size:13px;
+		font-weight:bold;
+		position:absolute;
+		left:14px;
+	}
+	
+	/* Conditional Twitter content styling */
 	aside.twitterBox img { height:381px; width:274px; }   /* filler if JS disabled */
 	aside.twitterBox a.twitter-timeline { display:none; } /* hide ugly anchor if JS disabled */
 	

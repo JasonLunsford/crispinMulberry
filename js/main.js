@@ -20,21 +20,24 @@
 			( $(this).hasClass("lastChild") ) ? $(this).addClass("selected lastChildSelected") : $(this).addClass("selected");
 		});
 		
-		// Disable nav items
+		// Disable nav items (for demonstration purposes only)
+		// If JS were disabled these intercepts would not work and the page would reload as expected.
 		$("nav li a").on("click", function(e) {
 			e.preventDefault();
 			console.log($(this).text()+" clicked");
 		});
 		
-		// Disable page footer icons when JS is available - otherwise open page in another tab
-		$("div.siteFooter a").on("click", function(e) {
+		// Disable body and footer anchors (for demonstration purposes only)
+		// If JS were disabled these intercepts would not work and the page would reload or create new tabs as expected.
+		$("div.copyHeavyContainer a, div.siteFooter a").on("click", function(e) {
 			e.preventDefault();
-			if ( $(this).attr(src) ) { console.log("Link to "+$(this).attr(src)+" clicked."); }
+			var anchorCheck = $(this).attr("href");
+			if ( typeof anchorCheck != "undefined" && anchorCheck.length > 0 ) { console.log("Link to "+anchorCheck+" clicked."); }
 			else { console.log($(this).text()+" clicked"); }
 		});
 		
 		
-		// Intercept and deactivate form submissions
+		// Intercept form submissions
 		$("#searchButton").on("click", function(e) {
 			e.preventDefault();
 			console.log("Site search triggered.");
@@ -42,8 +45,9 @@
 		
 		$("#newsletterButton").on("click", function(e) {
 			e.preventDefault();
-			// add click state detection for the two check boxes and output their state
-			console.log("Newsletter lead capture form submitted");
+			var checkBoxOneState = ($("#checkBoxOne:checked").length > 0) ? "Checked" : "Unchecked";
+			var checkBoxTwoState = ($("#checkBoxTwo:checked").length > 0) ? "Checked" : "Unchecked";
+			console.log("Newsletter lead capture form submitted, with the first check box "+checkBoxOneState+" and the second "+checkBoxTwoState+".");
 		});
 	
 	});
