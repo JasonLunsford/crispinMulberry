@@ -441,8 +441,8 @@ CONTENTS - MAIN.CSS
 	
 	div.newsLetterContainer div.emailFieldContainer input[type="text"] {
 		background:url("../img/newsletter/email_input_field_background.png") no-repeat 0px 0px transparent;
-		height:26px;
-		padding:0px 0px 0px 8px;
+		outline:none;
+		padding:5px 0px 9px 8px;  /* mucking with padding to ensure IE centers our input, tweaks Chrome slightly */
 		width:246px;
 	}
 	
@@ -467,6 +467,8 @@ CONTENTS - MAIN.CSS
 		color:#ffffff;
 		font-weight:bold;
 		height:25px;
+		outline:none; /* avoid using this everywhere, as outline is good for keyboard only users */
+		padding:0px 6px;
 		text-transform:uppercase;
 		width:71px;
 	}
