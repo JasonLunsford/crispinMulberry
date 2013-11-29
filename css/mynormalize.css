@@ -47,7 +47,7 @@ CONTENTS - MYNORMALIZE.CSS
 ----------------------------------------------------------------------------------------*/
 
 	/* Remove the gray background color from active links in IE 10. */
-	a { background:transparent; text-decoration:none; }
+	a { background:transparent; }
 
 	/* Address "outline" inconsistency between Chrome and other browsers. */
 	a:focus { outline:0; }
@@ -86,6 +86,8 @@ CONTENTS - MYNORMALIZE.CSS
 		font-size:100%;			/* 2 */
 		margin:0px;				/* 3 */
 	}
+	
+	input[type="text"] { border:0; }
 
 	/* Address Firefox 4+ setting "line-height" on <input> using "!important" in the User Agent stylesheet. */
 	button, input { line-height:normal; }
@@ -100,7 +102,7 @@ CONTENTS - MYNORMALIZE.CSS
 	input[type="checkbox"],
 	input[type="radio"] {
 		box-sizing:border-box;	/* 1 */
-		padding:0px;				/* 2 */
+		padding:0px;			/* 2 */
 	}
 
 	/*

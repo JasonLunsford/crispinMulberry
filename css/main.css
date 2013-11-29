@@ -9,7 +9,7 @@ CONTENTS - MAIN.CSS
 -----------------------------------------
 1. GLOBAL LAYOUT
 2. TYPOGRAPHY
-3. LINKS & BUTTONS
+3. LINKS & BUTTONS & FORMS
 4. SITE HEADER
 5. SITE NAVIGATION
 6. MAIN CONTENT
@@ -67,7 +67,7 @@ CONTENTS - MAIN.CSS
 	
 	h1 {
 		color:#ffffff; 
-		font-size:13px; 
+		font-size:12px; 
 		margin:0px;
 		padding:0px;
 		text-transform:uppercase;
@@ -75,14 +75,17 @@ CONTENTS - MAIN.CSS
 	
 	h2 {
 		color:#282b2e; 
-		font-size:14px; 
+		font-size:14px;
 		margin:0px 0px 10px 0px;
 		padding:0px;
 	}
 
-/* 3. LINKS & BUTTONS
+/* 3. LINKS & BUTTONS & FORMS
 ----------------------------------------------------------------------------------------*/
 
+	a { text-decoration:none; }
+	
+	input[type="text"] { font-size:12px; }
 
 /* 4. SITE HEADER
 ----------------------------------------------------------------------------------------*/
@@ -233,7 +236,7 @@ CONTENTS - MAIN.CSS
 	section.carouselContainer div.smallPictureRow img {
 		float:left;
 		height:79px;
-		margin-left:10px;
+		margin:0px 0px 0px 10px;
 		width:159px;
 	}
 	section.carouselContainer div.smallPictureRow img:first-child { margin:0px; }
@@ -302,7 +305,7 @@ CONTENTS - MAIN.CSS
 		margin:0px;
 	}
 	
-	aside.largeAdSpace div.topAd { margin-bottom:20px; }
+	aside.largeAdSpace div.topAd { margin:0px 0px 20px 0px; }
 	
 	aside.largeAdSpace img { height:200px; width:274px; }
 	
@@ -314,10 +317,8 @@ CONTENTS - MAIN.CSS
 	/* Shared Styling */
 	
 	/* Blue Title Bars */
-	div.wrapper section.mainContent header.thickBlueBar {
-		height:34px;
-		margin:0px 0px 20px 0px;
-	}
+	div.wrapper section.mainContent header.thickBlueBar { height:34px; margin:0px 0px 20px 0px; }
+	
 	div.wrapper section.mainContent header.ribbonWrap {
 		background:url("../img/Fold-Over-Endcap.png") 0px 0px no-repeat transparent;
 		margin:0px 0px 14px 0px;
@@ -344,7 +345,6 @@ CONTENTS - MAIN.CSS
 		background-repeat:no-repeat;
 		border-bottom:1px solid #969696;
 		color:#282b2e;
-		font-size:12px;
 		height:30px;
 		line-height:30px;
 		padding:0px 0px 0px 21px;
@@ -352,16 +352,23 @@ CONTENTS - MAIN.CSS
 	}
 	
 	/* Anchors */
-	div.wrapper section.mainContent div.copyHeavyContainer a {
-		color:#282b2e;
-		font-size:14px;
-	}
+	div.wrapper section.mainContent div.copyHeavyContainer a { color:#282b2e; font-size:14px; }
 	div.wrapper section.mainContent div.copyHeavyContainer a:hover { color:#0084d9; }
+	
+	/* Anchors, Buttons, Labels and Paragraphs */
+	div.wrapper section.mainContent aside.leadCollectors button,
+	div.wrapper section.mainContent aside.leadCollectors a,
+	div.wrapper section.mainContent aside.leadCollectors label,
+	div.wrapper section.mainContent aside.leadCollectors p { font-size:12px; }
 	
 	/* End Shared Styling */
 	
 	/* Section Containers */
-	section.mainContent div.copyHeavyContainer { height:429px; margin:0px; padding:0px 20px; }
+	section.mainContent div.copyHeavyContainer { 
+		height:429px; 
+		margin:0px; 
+		padding:0px 20px;
+	}
 	
 	div.copyHeavyContainer aside.browseCategories,
 	div.copyHeavyContainer article.recentArticles,
@@ -373,31 +380,19 @@ CONTENTS - MAIN.CSS
 	
 	div.copyHeavyContainer aside.leadCollectors { width:274px; }
 	
-	aside.leadCollectors div.newsLetterContainer {
-		background-color:#dbdbdb;
-		height:227px;
-		margin:0px 0px 20px 0px;
-		padding:0px 10px
-	}
+	aside.leadCollectors div.newsLetterContainer,
+	aside.leadCollectors div.contestsContainer { background-color:#dbdbdb; padding:0px; }
 	
-	aside.leadCollectors div.contestsContainer {
-		background-color:#dbdbdb;
-		height:171px;
-		padding:0px 10px
-	}
+	aside.leadCollectors div.newsLetterContainer { height:227px; margin:0px 0px 20px 0px; }
+	
+	aside.leadCollectors div.contestsContainer { height:171px; }
 	/* End Section Containers */
 	
 	/* Blue Content Bars - Individual Styling */
 	aside.browseCategories header.thickBlueBar { width:209px; }
-	aside.browseCategories header.thickBlueBar h1 {
-		background-position:-121px -4px;
-		margin:0px 0px 0px 7px;
-	}
+	aside.browseCategories header.thickBlueBar h1 { background-position:-121px -4px; margin:0px 0px 0px 7px; }
 	
-	article.recentArticles header.thickBlueBar h1 {
-		background-position:-116px -173px;
-		margin:0px 0px 0px 7px;
-	}
+	article.recentArticles header.thickBlueBar h1 { background-position:-116px -173px; margin:0px 0px 0px 7px; }
 	/* End Blue Content Bar Styling */
 	
 	aside.browseCategories h2 {
@@ -415,27 +410,107 @@ CONTENTS - MAIN.CSS
 		padding:0px;
 	}
 	
-	article.recentArticles div.articleRow { height:130px; margin:0px 0px 20px 0px; }
+	aside.browseCategories ul li { line-height:16.5px; }
+	
+	article.recentArticles div.articleRow { height:105px; margin:0px 0px 20px 0px; }
 	article.recentArticles div.articleRow img {
 		float:left; 
-		height:100%; 
+		height:105px; 
 		margin:0px 16px 0px 0px; 
-		width:151px;
+		width:140px;
 	}
 	
-	article.recentArticles div.articleRow h2 { margin-top:2px; }
+	article.recentArticles div.articleRow h2 { margin:2px 0px 8px 0px; }
 	article.recentArticles div.articleRow p {
-		font-size:14.5px; 
+		font-size:14px; 
 		height:100px; 
-		line-height:20px;
+		line-height:16px;
 	}
-	
 	
 	/* Lead Collector Bars - Individual Styling */
 	aside.leadCollectors div.newsLetterContainer h1 { background-position:-123px -234px; }
 
 	aside.leadCollectors div.contestsContainer h1 { background-position:-123px -63px; }
 	/* End Lead Collector Bar Styling */
+	
+	div.newsLetterContainer header { margin:0px 10px 11px 10px; }
+	div.newsLetterContainer form { margin:0px 10px 10px 10px; }
+	div.newsLetterContainer footer { margin:0px; }
+	
+	div.newsLetterContainer div.emailFieldContainer { margin:0px 0px 11px 1px; }
+	
+	div.newsLetterContainer div.emailFieldContainer input[type="text"] {
+		background:url("../img/newsletter/email_input_field_background.png") no-repeat 0px 0px transparent;
+		height:26px;
+		padding:0px 0px 0px 8px;
+		width:246px;
+	}
+	
+	div.newsLetterContainer div.checkBoxContainer { background-color:#cac9c9; padding:10px 10px 4px; }
+	
+	div.newsLetterContainer div.checkBoxContainer p { font-style:italic; margin:0px 0px 7px 0px; }
+	
+	div.checkBoxContainer div { 
+		height:18px;
+		line-height:18px;
+		margin:0px 0px 3px 0px;
+	}
+	
+	div.checkBoxContainer div label { float:left; font-weight:bold; }
+	div.checkBoxContainer div input[type="checkbox"] { float:left; margin:1px 10px 0px 0px; }
+	
+	div.signUpButtonContainer { margin:9px 0px 0px 0px; text-align:right; }
+	
+	div.signUpButtonContainer button {
+		background-color:#0084d9;
+		border:1px solid #0084d9;
+		color:#ffffff;
+		font-weight:bold;
+		height:25px;
+		text-transform:uppercase;
+		width:71px;
+	}
+	div.signUpButtonContainer button:hover {
+		background-color:#ffffff;
+		color:#0084d9;
+		cursor:pointer;
+	}
+	
+	div.newsLetterContainer footer { background-color:#cac9c9; border-top:1px solid #969696; }
+	
+	div.newsLetterContainer footer ul {
+		list-style:none;
+		margin:0px;
+		padding:0px;
+	}
+	
+	div.newsLetterContainer footer ul li {
+		float:left; 
+		line-height:21px;
+		text-align:left;
+		width:137px;
+	}
+	
+	div.newsLetterContainer footer ul li:first-child {
+		text-align:right;
+	}
+	
+	div.newsLetterContainer footer ul li a { padding:0px 0px 0px 12px; }
+	div.newsLetterContainer footer ul li:first-child a { border-right:1px solid #282b2e; padding:0px 12px 0px 0px; }
+	
+	div.contestsContainer header,
+	div.contestsContainer div.contestsRow { margin:0px 10px 10px 10px; }
+	
+	div.contestsContainer div.contestsRow { height:55px; }
+	
+	div.contestsContainer div.contestsRow img {
+		float:left; 
+		height:55px; 
+		margin:0px 16px 0px 0px; 
+		width:73px;
+	}
+	
+	div.contestsContainer div.contestsRow p { font-weight:bold; }
 	
 	/* END COPY HEAVY CONTAINER STYLING */
 	
