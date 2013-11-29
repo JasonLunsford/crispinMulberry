@@ -1,20 +1,20 @@
 /*
-NAT Challenge Global Stylesheet
+	NAT Challenge Global Stylesheet
 
-Author: Jason Lunsford
-Version: 1.0
-URL: 
------------------------------------------
-CONTENTS - MAIN.CSS
------------------------------------------
-1. GLOBAL LAYOUT
-2. TYPOGRAPHY
-3. LINKS & BUTTONS & FORMS
-4. SITE HEADER
-5. SITE NAVIGATION
-6. MAIN CONTENT
-7. SITE FOOTER
-8. BROWSER AND NON-SEMANTIC STYLING
+	Author: Jason Lunsford
+	Version: 1.0
+	URL: www.jasonlunsford.net
+	-----------------------------------------
+	CONTENTS - MAIN.CSS
+	-----------------------------------------
+	1. GLOBAL LAYOUT
+	2. TYPOGRAPHY
+	3. LINKS & BUTTONS & FORMS
+	4. SITE HEADER
+	5. SITE NAVIGATION
+	6. MAIN CONTENT
+	7. SITE FOOTER
+	8. BROWSER AND NON-SEMANTIC STYLING
 
 */
 
@@ -90,7 +90,7 @@ CONTENTS - MAIN.CSS
 	}
 	a:hover { color:#0084d9; }
 	
-	input[type="text"] { font-size:12px; }
+	input[type="text"] { border:0; font-size:12px; }
 
 /* 4. SITE HEADER
 ----------------------------------------------------------------------------------------*/
@@ -234,6 +234,7 @@ CONTENTS - MAIN.CSS
 	nav ul li.selected a { color:#000000; padding:4px 0px 0px; }
 		
 	/* Text colors do NOT change in this live demo, only selected item background and text positioning */
+	/* Remove these classes to get CSS rendered menu names */
 	nav ul li a.destinations { background:url("../img/navbar/DESTINATIONS.png") no-repeat center 15px transparent; color:transparent; }
 	nav ul li.selected a.destinations { background-position:center 19px; }
 	nav ul li a.contests { background:url("../img/navbar/CONTESTS.png") no-repeat center 15px transparent; color:transparent; }
@@ -712,27 +713,4 @@ CONTENTS - MAIN.CSS
 	.hidden {
 		display:none !important;
 		visibility:hidden;
-	}
-
-	/* Hide only visually, but have it available for screenreaders - Good for Section 508 */
-	.visuallyhidden {
-		border:0;
-		clip:rect(0 0 0 0);
-		height:1px;
-		margin:-1px;
-		overflow:hidden;
-		padding:0px;
-		position:absolute;
-		width:1px;
-	}
-
-	/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard */
-	.visuallyhidden.focusable:active,
-	.visuallyhidden.focusable:focus {
-		clip:auto;
-		height:auto;
-		margin:0px;
-		overflow:visible;
-		position:static;
-		width:auto;
 	}
