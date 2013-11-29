@@ -15,11 +15,19 @@
 	<img class="windowBackground" src="img/cityscape_highQuality.jpg" alt=""/>
 	<div class="wrapper" role="main">
 		<div class="siteHeader" role="banner">
-			<a href="" class="siteLogo"><img src="img/header/Crispin_and_Mulberry_Logo.png" alt="Crispin and Mulberry Logo" /></a>
+			<a href="http://domain.tld" class="siteLogo"><img src="img/header/Crispin_and_Mulberry_Logo.png" alt="Crispin and Mulberry Logo" /></a>
 			<div class="siteUtilities">
-				<form class="siteSearch" id="search" action="">
-				 <!-- input and button go here, use #searchButton for the ID -->
+				<form id="search" action="">
+				 	<input type="text" name="inboundSearchString" placeholder="Search" maxlength=50 />
+				 	<button type="submit" id="searchButton" name="searchString"></button>
 				</form>
+				<div>
+					<ul>
+						<li><a href="">My Account</a></li>
+						<li><a href="">My Subscriptions</a></li>
+						<li class="noRightBorder"><a href="">My Articles</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<nav role="navigation">
@@ -141,7 +149,7 @@
 						</header>
 						<form id="newsletter" action="">
 							<div class="emailFieldContainer">
-								<input type="text" name= "newsletterEmail" placeholder="user@domain.com" maxlength=25 />
+								<input type="text" name="newsletterEmail" placeholder="user@domain.com" maxlength=25 />
 							</div>
 						 	<div class="checkBoxContainer">
 						 		<p>Select the newsletters you'd like to receive</p>

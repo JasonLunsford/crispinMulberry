@@ -29,7 +29,7 @@
 		
 		// Disable body and footer anchors (for demonstration purposes only)
 		// If JS were disabled these intercepts would not work and the page would reload or create new tabs as expected.
-		$("div.copyHeavyContainer a, div.siteFooter a").on("click", function(e) {
+		$("div.siteHeader a, div.copyHeavyContainer a, div.siteFooter a").on("click", function(e) {
 			e.preventDefault();
 			var anchorCheck = $(this).attr("href");
 			if ( typeof anchorCheck != "undefined" && anchorCheck.length > 0 ) { console.log("Link to "+anchorCheck+" clicked."); }
