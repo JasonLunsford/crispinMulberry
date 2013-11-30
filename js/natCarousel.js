@@ -14,7 +14,7 @@
 // 3) Clean up parameters passed from user (and from default) better, timer is vulnerable
 //	  vulnerable to borking if user passes crazy numbers - will set default speed to 4000ms
 //    if user tries passing a value that is not a number (not perfect)
-// 4) KNOWN IE DEFECTS: Not handling my timing counter (maybe?), anyway when thumbnail clicked and cycle
+// 4) KNOWN IE & SAFARI DEFECT: Not handling my timing counter (maybe?), anyway when thumbnail clicked and cycle
 //    resumed the carousel does not advance to the next slide as it should (tested in IE 7-9)
 
 
