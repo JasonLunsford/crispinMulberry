@@ -1,0 +1,136 @@
+/*
+	ABC, Inc Project Proposal
+
+	Author: Jason Lunsford
+	Version: 1.0
+	URL: www.jasonlunsford.net/abcProject.html
+	-----------------------------------------
+	CONTENTS - MAIN.CSS
+	-----------------------------------------
+	1. GLOBAL LAYOUT
+	2. TYPOGRAPHY
+	3. SITE HEADER
+	4. MAIN CONTENT
+	6. SITE FOOTER
+
+*/
+
+/* 1. GLOBAL LAYOUT
+----------------------------------------------------------------------------------------*/
+
+	/* Position relative to allow content to render in front of the fixed position background img */
+	div.wrapper {
+		height:100%;
+		margin:0px auto;
+		position:relative;
+		width:850px;
+	}
+
+
+/* 2. TYPOGRAPHY
+----------------------------------------------------------------------------------------*/
+	
+	h1, h2, h3, h4 { padding:0px; text-transform:uppercase; }
+	
+	h1 {
+		color:#000000; 
+		font-size:29px; 
+		margin:32px 0px 11px 0px;
+	}
+	
+	h2 {
+		color:#8b9b92; 
+		font-size:25px;
+		margin:0px;
+	}
+	
+	h3 {
+		color:#000000; 
+		font-size:15px;
+		margin:0px;
+	}
+	
+	h4 {
+		color:#8b9b92; 
+		font-size:18px;
+		margin:0px;
+	}
+
+	p { 
+		color:#000000; 
+		font-size:14px; 
+		margin:0px;
+		padding:0px;
+	}
+
+/* 3. SITE HEADER
+----------------------------------------------------------------------------------------*/
+
+	div.siteHeader {
+		background-image:url("../../img/sow/page_header.png");
+		background-position:49px bottom ;
+		background-repeat:no-repeat;
+		height:268px;
+		margin:0px;
+	}
+	
+	div.siteHeader div { float:left; padding:0px 0px 0px 74px; width:100%; }
+	
+	div.siteHeader div.dateAndVersion {
+		height:25px;
+		line-height:27px;
+		margin:0px 0px 2px 74px;
+		padding:126px 0px 0px 0px;
+	}
+	
+	div.siteHeader div.pageTitle { height:113px; }
+	
+	div.siteHeader div.dateAndVersion p { font-weight:bold; text-transform:uppercase; }
+	
+	div.siteHeader div.pageTitle h1 { margin:17px 0px 0px 0px; }
+	div.siteHeader div.pageTitle h3 { margin:2px 0px 0px 0px; }
+	
+	
+/* 4. MAIN CONTENT
+----------------------------------------------------------------------------------------*/
+
+	section.mainContent {
+		height:100%;
+		min-height:500px;
+		margin:0px 0px 50px 0px;
+		padding:25px 67px 0px 50px;
+	}
+	
+	section.mainContent h4,
+	section.mainContent p { margin:0px 0px 15px 0px; }
+	
+	section.mainContent ul li,
+	section.mainContent ol li { font-size:14px; }
+	
+	section.mainContent p.sectionNotes { font-style:italic; margin:0px; }
+	
+	section.mainContent p.timeEstimate { font-weight:bold; }
+	section.mainContent p.finalTimeEstimate { margin:15px 0px; }
+	
+	section.mainContent p.highlightTitle {
+		background-color:#8B9B92;
+		color:#ffffff;
+		font-weight:bold;
+		height:18px;
+		line-height:18px;
+		margin:10px 0px;
+		padding:0px 0px 0px 3px;
+	}
+	
+
+/* 5. SITE FOOTER
+----------------------------------------------------------------------------------------*/
+
+	div.siteFooter {
+		background-image:url("../../img/sow/page_footer.png");
+		background-position:49px 0px ;
+		background-repeat:no-repeat;
+		height:75px;
+		margin:0px;
+	}
+

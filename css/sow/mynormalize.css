@@ -1,0 +1,52 @@
+/*
+	ABC, Inc Project Proposal Custom Normalize Stylesheet
+
+	Author: Jason Lunsford
+	Version: 1.0
+	URL: www.jasonlunsford.net/abcProject.html
+
+	-----------------------------------------
+	CONTENTS - MYNORMALIZE.CSS
+	-----------------------------------------
+	1. HTML5 ELEMENTS
+	2. TYPOGRAPHY
+	3. GLOBAL LAYOUT
+	4. CONTENT
+
+*/
+
+/* 1. HTML5 ELEMENTS
+----------------------------------------------------------------------------------------*/
+
+	/* Correct "block" display not defined in IE 8/9. */
+	article,
+	aside,
+	details,
+	figcaption,
+	figure,
+	footer,
+	header,
+	main,
+	nav,
+	section,
+	summary { display:block; }
+
+
+/* 2. TYPOGRAPHY
+----------------------------------------------------------------------------------------*/
+
+	html { font-family:Helvetica, Arial, sans-serif; }
+	
+
+/* 3. GLOBAL LAYOUT
+----------------------------------------------------------------------------------------*/
+	
+	html ( height:100%; }
+
+	body { margin:0px; min-height:100% }
+
+
+/* 4. CONTENT
+----------------------------------------------------------------------------------------*/
+
+

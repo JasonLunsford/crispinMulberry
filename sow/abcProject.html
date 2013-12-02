@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset=utf-8 />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jason Lunsford - ABC, Inc Project Proposal</title>
+	<!-- Load Modernizr -->
+	<script src="../js/libraries/modernizr-2.7.0.js"></script>
+	<!-- Core CSS -->
+	<link rel="stylesheet" href="../css/sow/mynormalize.css" media="screen">
+	<link rel="stylesheet" href="../css/sow/main.css" media="screen">
+</head>
+<body>
+	<div class="wrapper" role="main">
+		<div class="siteHeader" role="banner">
+			<div class="dateAndVersion">
+				<p>Decemeber 1, 2013</p>
+			</div>
+			<div class="pageTitle">
+				<h1>ABC, Inc Project Proposal</h1>
+				<h3> (Campaign Analytics Dashboard)</h3>
+				<h3>Statement Of Work - Jason Lunsford</h3>
+			</div>
+		</div>
+		<section class="mainContent">
+			<h2>List of Questions for UX / Client</h2>
+			<ol>
+				<li>Who are our target users?</li>
+				<li>What is the target deployment date?</li>
+				<li>Are we certain all major requirements have been documented?</li>
+				<li>Any future plans to convert the Dashboard into a responsive design?</li>
+				<li>What are the performance expectations for initial page load and switching between clients?</li>
+				<li>Are there any requirements for specific back- or front-end technology we must use?</li>
+			</ol>
+			
+			<h2>Project Development Tasks, Timeline, Talent</h2>
+				<p class="sectionNotes">Note: These estimations are based on an Agile interpretation</p>
+				<p class="highlightTitle">Preparation Epic</p>
+				<p>Talent: 1 Designer, 1 Node.js Developer, 1 FE JS Developer</p>
+				<ul>
+					<li>Create the UI via PSDs based on the wireframes and style guide(s)</li>
+					<li>Iterate through a few design revisions to ensure UI matches client expectations</li>
+					<li>Client Web API Discovery</li>
+					<li>AngularJS Preparation / Discovery</li>
+					<li>Stability and performance tests to confirm d3.js works with AngularJS as well as we hope</li>
+					<li>jQuery plugin Discovery</li>
+					<li>Node.js MVC Discovery (Express or actionHero.js maybe)</li>
+					<li>Server resources allocated</li>
+				</ul>
+				<p class="timeEstimate">Time: 2 weeks (~6 hrs per day, 5 days per week)</p>
+				<p class="highlightTitle">Structure Epic</p>
+				<p>Talent: 1 Node.js Developer, 2 FE JS Developers, 1 QA Engineer</p>
+				<ul>
+					<li>Node.js and Node.js MVC deployed</li>
+					<li>Client Web API wired into Node.js, functionality validated</li>
+					<li>AngularJS skeleton passing data to/from the Node.js server as expected</li>
+					<li>Selection tables are rendering (without UI) via AngularJS</li>
+					<li>Performance graphs pulling data from server and rendering via d3.js</li>
+					<li>Button functionality for .CSV files and printing (including a print.css) built</li>
+					<li>Unit tests written and validated for Node.js, AngularJS, d3.js</li>
+				</ul>
+				<p class="timeEstimate">Time: 6 weeks</p>
+				<p class="highlightTitle">Interface Epic</p>
+				<p class="sectionNotes">Initial dependency on Structure Epic</p>
+				<p>Talent: 2 FE Web Developers, 1 FE JS Developer, 1 QA Engineer</p>
+				<ul>
+					<li>Convert PSDs into HTML / CSS</li>
+					<li>AngularJS views created - one per data group and one for the Health Monitor landing page</li>
+					<li>Global Navigation UI and drop down menus for Health Monitor built</li>
+					<li>UI created for entire experience, not (necessarily) attached to AngularJS skeleton yet</li>
+					<li>jQuery animations (calendar, client health score ticker, etc) skeletons created</li>
+					<li>Cookie functionality created</li>
+					<li>Unit tests written and validated for jQuery animations / behavior</li>
+				</ul>
+				<p class="timeEstimate">
+					6 weeks / 4 weeks added to timeline [Note: ~2 week overlap with Structure Epic likely]
+				</p>
+				<p class="highlightTitle">Launch Epic</p>
+				<p>Talent: 2 FE Web Developers, 2 FE JS Developers, 1 Node.js Developer, 1 QA Engineer</p>
+				<ul>
+					<li>AngularJS powered Dashboard fully deployed, UI attached, pages match original PSDs</li>
+					<li>d3.js fully connected to AngularJS, also pulling data from Node.js server as expected</li>
+					<li>jQuery animations work as expected (pause on hover over, calendar displays correct data, etc) and pull data from AngularJS (and d3.js) as expected</li>
+					<li>Assist client in transferring application to their hosted environment, including tweaking API calls, installing Node.js / Node.js MVC, and any remaining initial installation tasks</li>
+					<li>Regression tests written and validate via Selenium (for example), all workflows documented for this release are green for the browsers documented in the Supported Browsers table</li>
+					<li>Share Regression tests with ABC, Inc and ensure they are capable of running them</li>
+				</ul>
+				<p class="timeEstimate">
+					6 weeks [huge amount of client dependency here, fluctuations to timeline anticipated]
+				</p>
+				<p class="timeEstimate finalTimeEstimate">Total Project Time: 18 weeks / 9 (2-week) sprints<p>
+			
+			<h2>SOW Highlighted Questions - Answered</h2>
+			<h4>Javascript Charting Engine</h4>
+			<p>
+For this project we will use the <a href="http://d3js.org/">d3.js</a> engine. This engine offers fantastic visualization options (the Examples page is pretty cool) and a sensible interface for accessing data nodes. The list of reasons to choose d3.js is long. The engine allows the binding of arbitrary data to the DOM, and makes accessing nodes easy using a selector technique defined by the W3C Selectors API (it also supports the sizzle engine to support node selection within older browsers). It does all of that without using a proprietary framework, dealing strictly with HTML, CSS, and SVG.
+			</p>
+			<p>
+Additionally, d3.js supports all of our obligated browsers, including IE9. It is also totally compatible with both AngularJS (check out Sky Blue Trades <a href="http://www.skybluetrades.net/blog/posts/2013/04/24/radian">Radian</a> project) and Node.js. As it turns out I am recommending both of these technologies for ABC, Inc’s Campaign Analytics Dashboard project.
+			</p>
+			<h4>Deployment Plan Methodology</h4>
+			<p>Project Methodology: Agile</p>
+			<p>
+Agile will afford our team the ability to produce units of functional work at predictable intervals suitable for demonstration to stakeholders and other, non-technical team members committed to the project at large.
+			</p>
+			<p>
+Agile will also help me as team lead create timelines and offer time-to-completion estimates without the overhead of downstream deadlines generated based on my estimates. This assumes both client and institutional commitment to the Agile philosophy. Long term estimates will be generated by the formation of epics (essentially, big stories with SWAG attached based on prior experience with similar work). Later, stories will be written by both the stakeholders and members of my team that will cover the completion of the epic. The relative difficulty of these stories will be measured by my team, information with which I use to further refine the time-to-delivery estimate of the particular epic.
+			</p>
+			<p>
+Day to day, my team will operate within a sprint - typically about 2 weeks long, with an assumption of approximately 6 hours per day of work per team member. Sprint length and hours-per-day of actual work are but two of many attributes that will require fine tuning over time (outside the scope of this project) - the entire array of these attributes together form my team’s velocity, a relative measure of how productive my team is in general, and a major asset in estimating time-to-completion for projects going forward.
+			</p>
+			<p>
+For Agile to work in a reliable and productive fashion all members of the project, client, institution, and technical members must commit to the unique constraints, requirements, and workflow of the process. Multiple meetings will be required, some involving my team members, others involving only the stakeholders and team leads. Daily meetings are necessary within my team in order to help keep parity between members. Meetings to discuss story priority, estimate story difficulty, pick stories / write tasks for the story, and discuss how a sprint was handled (held at the end of the sprint) are examples of more meetings necessary under Agile. Finally, it will be my responsibility to prepare a presentation to the stakeholders every two weeks. This presentation will show the completed units of work, thereby affirming the project is moving in a regular, timely fashion. This is also the time to answer any questions generated by the presentation. Often, demonstrations are a catalyst for clients to speak up (typically after the meeting!) when the project is not going in a satisfactory way. Consequently epics can be re-evaluated and stories refashioned, allowing for mid-stream direction changes that can often keep the project on track. Ultimately, this is the power of Agile!
+
+			</p>
+			<h4>Assumptions</h4>
+			<p class="highlightTitle">Artwork & Provided Files</p>
+			<p>
+We assume the client will provide all necessary wireframes for the global project (Digital Nervous System) as well as workflow-centric wireframes for the specific Health Monitor project. 
+			</p>
+			<p>
+We assume a branding style guide will be furnished, complete with (but not limited to) color palette, iconography, typography, and button / anchor styling. 
+			</p>
+			<p>
+Finally, we assume all necessary images, such as company logo, will be furnished in whatever image quality the client prefers.
+			</p>
+			<p class="highlightTitle">Technology Requirements</p>
+			<p>
+The client has full access to their hosted environments, such that the installation of server side languages like Node.js is possible and regular access to production logs - via automated scripting most likely - won’t be a problem.
+			</p>
+			<p>
+Client will provide Nerdy staff access to those hosted environments for the duration of the installation period - with at least one account given admin privileges for the trouble free installation of Node.js.
+			</p>
+			<p>
+The Nerdery will employ cache busting techniques whenever the benefits of caching are outweighed by the risk of displaying stale client data - and that these techniques will be refined during the course of development if performance vs data relevance becomes an issue.
+			</p>
+			<p class="highlightTitle">Deployment</p>
+			<p>
+The Nerdery will install Node.js, the selected Node.js MVC framework, build the folder structure used in The Nerdery Production environment, re-configure any API calls / URL paths necessary to adapt to the new hosted environment, and verify the site comes up for an ABC, Inc employee from within a network where the Dashboard will be used.
+			</p>
+			<p>
+Following deployment, The Nerdery will work with ABC, Inc staff to transfer Regression tests to ABC, Inc testing servers and fully train their QA engineers on using them. If a test (or tests) fail to produce green lights The Nerdery staff will troubleshoot and repair misconfigured code.
+			</p>
+			<p class="highlightTitle">Future Project Considerations</p>
+			<p>
+Once the client shares our code base we should consider building a shared git environment. The benefit here would be that we could configure ABC, Inc’s production environment to parallel our own - and therefore development workflow could progress from The Nerdery environments directly into client’s production environment, cutting down deployment complexity following the release of new projects.
+			</p>
+		</section>
+		<div class="siteFooter" role="contentinfo">
+	
+		</div>
+	</div>
+</body>
+</html>
