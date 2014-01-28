@@ -1,5 +1,5 @@
 //--------------------------------
-// NAT Challenge Carousel Plug-in
+// Custom Carousel Plug-in
 // Jason Lunsford
 // v1.0
 // natCarousel.js

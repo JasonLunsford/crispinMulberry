@@ -1,5 +1,5 @@
 //--------------------------------
-// NAT Challenge Core JS
+// Core JS
 // Jason Lunsford
 // v1.0
 // main.js
